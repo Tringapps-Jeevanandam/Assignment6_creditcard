@@ -1,7 +1,7 @@
 package je;
 
 import java.util.*;
-class credit implements Cloneable{
+class CREDIT implements Cloneable{
     String cardHolderName;
     long cardNumber;
     String expDate;
@@ -20,7 +20,7 @@ class credit implements Cloneable{
         }  
 
 }
-class creditcard{
+class CREDITCARD{
     public static void main(String[] args) throws CloneNotSupportedException {
         String cardHolderName;
         long cardNumber;
