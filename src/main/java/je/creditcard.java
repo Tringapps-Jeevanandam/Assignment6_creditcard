@@ -45,8 +45,10 @@ class creditcard{
         else{
             Log.info("Card Numbersk are same");
         }
-        Log.info("ORIGINAL CARD DETAILS: Card Holder Name: "+cr.cardHolderName+" Card Number:"+cr.cardNumber+" Exp Date: "+cr.expDate);
-        Log.info("AFTER CLONING : Card Holder Name: "+cr2.cardHolderName+" Card Number:"+cr2.cardNumber+" Exp Date: "+cr2.expDate);
+        String op1 ="ORIGINAL CARD DETAILS: Card Holder Name: "+cr.cardHolderName+" Card Number:"+cr.cardNumber+" Exp Date: "+cr.expDate;
+        String op2 = "AFTER CLONING : Card Holder Name: "+cr2.cardHolderName+" Card Number:"+cr2.cardNumber+" Exp Date: "+cr2.expDate;
+        Log.info(op1);
+        Log.info(op2);
 
     }
 }
