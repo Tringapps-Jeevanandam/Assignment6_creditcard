@@ -2,12 +2,12 @@ package je;
 
 import java.util.*;
 import java.util.logging.Logger;
-class credit implements Cloneable{
+class CREDIT implements Cloneable{
     String cardHolderName;
     long cardNumber;
     String expDate;
 
-    credit(String cardHolderName,long cardNumber,String expDate){
+    CREDIT(String cardHolderName,long cardNumber,String expDate){
         this.cardHolderName = cardHolderName;
         this.cardNumber = cardNumber;
         this.expDate = expDate;
@@ -21,7 +21,7 @@ class credit implements Cloneable{
         }  
 
 }
-class creditcard{
+class CREDITCARD{
     public static final Logger Log = Logger.getLogger("InfoLogging");
     public static void main(String[] args) throws CloneNotSupportedException {
         String cardHolderName;
@@ -34,11 +34,11 @@ class creditcard{
         cardNumber = sc.nextLong();
         Log.info("Exp Date:");
         expDate = sc.next();
-        credit cr = new credit(cardHolderName, cardNumber, expDate);
-        credit cr2 = (credit)cr.clone();
+        CREDIT cr = new CREDIT(cardHolderName, cardNumber, expDate);
+        CREDIT cr2 = (CREDIT)cr.clone();
         Log.info("New card Number: ");
         long newCardNumber = sc.nextLong();
-        if(cr.equals(newCardNumber)==false){
+        if(!cr.equals(newCardNumber)){
             Log.info("Card number updated");
             cr2.cardNumber = newCardNumber;
         }
