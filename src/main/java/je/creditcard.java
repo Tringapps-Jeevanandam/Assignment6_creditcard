@@ -27,7 +27,6 @@ class CREDITCARD{
         String cardHolderName;
         long cardNumber;
         String expDate;
-        try{
         Scanner sc = new Scanner(System.in);
         Log.info("Enter Credit Card details:\nCard Holder Name: ");
         cardHolderName = sc.nextLine();
@@ -50,11 +49,7 @@ class CREDITCARD{
         String op2 = "AFTER CLONING : Card Holder Name: "+cr2.cardHolderName+" Card Number:"+cr2.cardNumber+" Exp Date: "+cr2.expDate;
         Log.info(op1);
         Log.info(op2);
-        }
-        catch(Exception e){
-        String exp = "Exception:"+e;
-        Log.info(exp);
-    }
+    
 
     }
 }
